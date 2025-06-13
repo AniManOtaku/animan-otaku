@@ -188,6 +188,15 @@ audio{
         gap: 2vw;
         box-sizing: border-box;
     }
+
+    #screen-links-ru, #screen-links-en{
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        gap: 2vw;
+        box-sizing: border-box;
+    }
     
     #about-ru-horizontal, #about-en-horizontal{
         display: none;
