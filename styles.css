@@ -70,6 +70,7 @@ body{
     align-items: center;
     overflow-y: auto;
     height: 100%;
+    border: 5px solid blue;
 }
 
 .bar-horizontal{
