@@ -14,8 +14,6 @@
         aboutRuHorizontal.style.border='4px solid purple';
     }
     
-    window.addEventListener ('resize', adjustHeights);
-    
     function showScreen(screenId){
         
         const screens=document.querySelectorAll('.active');
