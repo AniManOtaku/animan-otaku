@@ -38,8 +38,8 @@ body{
 #screen-about-ru, #screen-about-en{
     position: absolute;
     width: 100ve;
-    min-height: 100hv;
-    height: 100hv;
+    min-height: 100%;
+    height: 100%;
     left: 0;
     top: 0;
     overflow: hidden;
@@ -47,8 +47,8 @@ body{
 }
 
 #about-ru-portrait, #about-en-portrait{
-    width: 100wv;
-    min-height: 100hv;
+    width: 100%;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,8 +56,8 @@ body{
 }
 
 #about-ru-horizontal, #about-en-horizontal{
-    width: 100wv;
-    min-height: 100hv;
+    width: 100%;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,8 +69,7 @@ body{
     flex-direction: column;
     align-items: center;
     overflow-y: auto;
-    height: 100hv;
-    border: 5px solid blue;
+    height: 100%;
 }
 
 .bar-horizontal{
@@ -91,8 +90,8 @@ body{
 
 .screen{
     position: absolute;
-    width: 100wv;
-    min-height: 100hv;
+    width: 100vw;
+    min-height: 100%;
     left: 0;
     top: 0;
     transition: opacity 0.5s ease;
