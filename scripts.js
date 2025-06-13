@@ -8,9 +8,9 @@
                 screen.style.height='100vh';
         });
         
-        aboutRuPortrait.style.height='100%';
+        aboutRuPortrait.style.height='100vh';
         aboutRuPortrait.style.border='5px solid red';
-        aboutRuHorizontal.style.height='100%';
+        aboutRuHorizontal.style.height='100vh';
     }
     
     window.addEventListener ('resize', adjustHeights);
