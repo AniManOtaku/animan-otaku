@@ -38,9 +38,9 @@ body{
 #screen-about-ru, #screen-about-en{
     display: flex;
     flex-direction: column;
-    height: 100dvh;
+    align-items: center;
     overflow-y: auto;
-    border: 1px solid blue;
+    height: 100%;
 }
 
 #about-ru-portrait, #about-en-portrait{
