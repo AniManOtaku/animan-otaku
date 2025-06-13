@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-    <title>AniMan Otaku official page</title>
+    <title>no title</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="scripts.js">
     <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -36,6 +36,7 @@
     <audio id="audio" src="audio/staring.wav" loop></audio> <!-- аудио на экране о себе -->
     <div id="screen-about-ru" class="screen hidden">
         <!-- ВЕРТИКАЛЬНЫЙ РЕЖИМ -->
+        <div id="about-ru-portrait">
             <h1>Программирование</h1>
             <p1>Я с детства хотел создавать игры, поэтому, когда на уроках информатики мы стали изучать программирование, я очень увлёкся этим. Со временем я даже начал делать фанатскую игру «Bocchi The Platformer», но, к сожалению, так и не смог закончить.</p1>
             <img src="images/bocchi-the-platformer.png" alt="Bocchi The Platformer" class="rounded-image">
@@ -49,34 +50,9 @@
                 <img class="play-button" src="images/play-button2.svg">
             </div>
             <button class="small-button" onclick="showScreen ('screen-links-ru')">Дальше</button>
-        
-        
-        <!-- ГОРИЗОНТАЛЬНЫЙ РЕЖИМ -->
-        <div id="about-ru-horizontal">
-            <h1>Программирование</h1>
-            <div class="bar-horizontal big">
-                <img src="images/bocchi-the-platformer.png" alt="Bocchi The Platformer" class="rounded-image left">
-                <p2>Я с детства хотел создавать игры, поэтому, когда на уроках информатики мы стали изучать программирование, я очень увлёкся этим. Со временем я даже начал делать фанатскую игру «Bocchi The Platformer», но, к сожалению, так и не смог закончить.</p2>
-            </div>
-            
-            <h1>Анимация</h1>
-            <div class="bar-horizontal big">
-                <p2>Будучи подростком, я начал смотреть аниме и мгновенно влюбился в анимацию и сакугу. С тех пор я пытаюсь подражать японским мастерам и делаю анимации, которыми делюсь в своих социальных сетях.</p2>
-                <img src="images/nijika-ijichi.gif" alt="Bocchi The Platformer" class="rounded-image right">
-            </div>
-            
-            
-            <h1>Музыка</h1>
-            <div class="bar-horizontal big">
-                <div class="audio-player" onclick="togglePlay()">
-                    <img class="cover-image" src="images/staring-cover-image.png">
-                    <img class="play-button" src="images/play-button2.svg">
-                </div>
-                <p2>Я просто люблю создавать небольшие мелодии. Я не назову это своим пристрастием, но это определённо что-то чем мне нравится заниматься.</p2>
-            </div>
-            
-            <button class="small-button" onclick="showScreen ('screen-links-ru')">Дальше</button>
         </div>
+        
+        
     </div>
     
     
