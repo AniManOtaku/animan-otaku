@@ -1,10 +1,19 @@
     
     function adjustHeights(){
         const screens=document.querySelectorAll('.screen');
+        const aboutRuPortrait=document.getElementById('about-ru-portrait');
+        const aboutRuHorizontal=document.getElementById('about-ru-horizontal');
+        
         screens.forEach(screen=>{
                 screen.style.height='100vh';
         });
+        
+        aboutRuPortrait.style.height='100vh';
+        aboutRuPortrait.style.border='5px solid red';
+        aboutRuHorizontal.style.height='100vh';
     }
+    
+    window.addEventListener ('resize', adjustHeights);
     
     function showScreen(screenId){
         
@@ -47,7 +56,7 @@
         
         window.addEventListener ('DOMContentLoaded', initPlayers);
         window.addEventListener ('orientationchange', initPlayers);
-        window.addEventListener ('resize', initPlayers, adjustHeights);
+        window.addEventListener ('resize', initPlayers);
         
         function togglePlay(){
             if(audio.paused){
