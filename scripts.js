@@ -1,4 +1,12 @@
-function showScreen(screenId){
+    
+    function adjustHeights(){
+        const screens=document.querySelectorAll('.screen');
+        screens.forEach(screen=>{
+                screen.style.height='100vh';
+        });
+    }
+    
+    function showScreen(screenId){
         
         const screens=document.querySelectorAll('.active');
             screens.forEach(screen=>{
@@ -39,7 +47,7 @@ function showScreen(screenId){
         
         window.addEventListener ('DOMContentLoaded', initPlayers);
         window.addEventListener ('orientationchange', initPlayers);
-        window.addEventListener ('resize', initPlayers);
+        window.addEventListener ('resize', initPlayers, adjustHeights);
         
         function togglePlay(){
             if(audio.paused){
