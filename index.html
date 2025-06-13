@@ -35,27 +35,49 @@
     <!-- О СЕБЕ RU -->
     <audio id="audio" src="audio/staring.wav" loop></audio> <!-- аудио на экране о себе -->
     <div id="screen-about-ru" class="screen hidden">
-        <p1>текст</p1>
-        <p1>текст</p1>
-        <p1>текст</p1>
         <!-- ВЕРТИКАЛЬНЫЙ РЕЖИМ -->
-        <div>
+        <div id="about-ru-portrait">
             <h1>Программирование</h1>
             <p1>Я с детства хотел создавать игры, поэтому, когда на уроках информатики мы стали изучать программирование, я очень увлёкся этим. Со временем я даже начал делать фанатскую игру «Bocchi The Platformer», но, к сожалению, так и не смог закончить.</p1>
-        </div>
-            
             <img src="images/bocchi-the-platformer.png" alt="Bocchi The Platformer" class="rounded-image">
             <h1>Анимация</h1>
             <p1>Будучи подростком, я начал смотреть аниме и мгновенно влюбился в анимацию и сакугу. С тех пор я пытаюсь подражать японским мастерам и делаю анимации, которыми делюсь в своих социальных сетях.</p1>
             <img src="images/nijika-ijichi.gif" alt="Bocchi The Platformer" class="rounded-image">
             <h1>Музыка</h1>
             <p1>Я просто люблю создавать небольшие мелодии. Я не назову это своим пристрастием, но это определённо что-то чем мне нравится заниматься.</p1>
+            <div class="audio-player" onclick="togglePlay()">
+                <img class="cover-image" src="images/staring-cover-image.png">
+                <img class="play-button" src="images/play-button2.svg">
+            </div>
+            <button class="small-button" onclick="showScreen ('screen-links-ru')">Дальше</button>
+        </div>
+        
+        <!-- ГОРИЗОНТАЛЬНЫЙ РЕЖИМ -->
+        <div id="about-ru-horizontal">
+            <h1>Программирование</h1>
+            <div class="bar-horizontal big">
+                <img src="images/bocchi-the-platformer.png" alt="Bocchi The Platformer" class="rounded-image left">
+                <p2>Я с детства хотел создавать игры, поэтому, когда на уроках информатики мы стали изучать программирование, я очень увлёкся этим. Со временем я даже начал делать фанатскую игру «Bocchi The Platformer», но, к сожалению, так и не смог закончить.</p2>
+            </div>
+            
+            <h1>Анимация</h1>
+            <div class="bar-horizontal big">
+                <p2>Будучи подростком, я начал смотреть аниме и мгновенно влюбился в анимацию и сакугу. С тех пор я пытаюсь подражать японским мастерам и делаю анимации, которыми делюсь в своих социальных сетях.</p2>
+                <img src="images/nijika-ijichi.gif" alt="Bocchi The Platformer" class="rounded-image right">
+            </div>
+            
+            
+            <h1>Музыка</h1>
+            <div class="bar-horizontal big">
+                <div class="audio-player" onclick="togglePlay()">
+                    <img class="cover-image" src="images/staring-cover-image.png">
+                    <img class="play-button" src="images/play-button2.svg">
+                </div>
+                <p2>Я просто люблю создавать небольшие мелодии. Я не назову это своим пристрастием, но это определённо что-то чем мне нравится заниматься.</p2>
+            </div>
             
             <button class="small-button" onclick="showScreen ('screen-links-ru')">Дальше</button>
-        
-        <p1>текст</p1>
-        <p1>текст</p1>
-        <p1>текст</p1>
+        </div>
     </div>
     
     
