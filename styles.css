@@ -38,7 +38,7 @@ body{
 #screen-about-ru, #screen-about-en{
     position: absolute;
     width: 100vw;
-    height: 100dvh;
+    height: 100%;
     left: 0;
     top: 0;
     overflow-y: auto;
