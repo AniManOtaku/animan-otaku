@@ -37,31 +37,33 @@ body{
 
 #screen-about-ru, #screen-about-en{
     position: absolute;
-    width: 100vw;
-    min-height: 100vh;
-    height: 100vh;
+    width: 100ve;
+    min-height: 100%;
+    height: 100%;
     left: 0;
     top: 0;
-    overflow: hidden;
+    overflow-y: auto;
     /*border: 1px solid blue;*/
 }
 
 #about-ru-portrait, #about-en-portrait{
     width: 100%;
     min-height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 #about-ru-horizontal, #about-en-horizontal{
     width: 100%;
     min-height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 #screen-links-ru, #screen-links-en{
@@ -91,7 +93,7 @@ body{
 .screen{
     position: absolute;
     width: 100vw;
-    min-height: 100vh;
+    min-height: 100%;
     left: 0;
     top: 0;
     transition: opacity 0.5s ease;
@@ -191,7 +193,6 @@ audio{
         padding-bottom: 10vh;
         gap: 2vw;
         box-sizing: border-box;
-        overflow-y: auto;
     }
     
     #about-ru-horizontal, #about-en-horizontal{
@@ -306,7 +307,6 @@ audio{
         height: 100%;
         gap: 2vw;
         box-sizing: border-box;
-        overflow-y: auto;
     }
     
     .bar-horizontal{
