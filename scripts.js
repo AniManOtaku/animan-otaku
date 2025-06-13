@@ -5,12 +5,12 @@
         const aboutRuHorizontal=document.getElementById('about-ru-horizontal');
         
         screens.forEach(screen=>{
-                screen.style.height='100vh';
+                screen.style.height='100%';
         });
         
-        aboutRuPortrait.style.height='100vh';
+        aboutRuPortrait.style.height='100%';
         aboutRuPortrait.style.border='5px solid red';
-        aboutRuHorizontal.style.height='100vh';
+        aboutRuHorizontal.style.height='100%';
     }
     
     window.addEventListener ('resize', adjustHeights);
