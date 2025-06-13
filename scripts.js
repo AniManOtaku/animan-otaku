@@ -3,14 +3,15 @@
         const screens=document.querySelectorAll('.screen');
         const aboutRuPortrait=document.getElementById('about-ru-portrait');
         const aboutRuHorizontal=document.getElementById('about-ru-horizontal');
-        /*
+        
         screens.forEach(screen=>{
                 screen.style.height='100vh';
         });
         
         aboutRuPortrait.style.height='100vh';
         aboutRuPortrait.style.border='5px solid red';
-        aboutRuHorizontal.style.height='100vh';*/
+        aboutRuHorizontal.style.height='100vh';
+        aboutRuHorizontal.style.border='4px solid purple';
     }
     
     window.addEventListener ('resize', adjustHeights);
