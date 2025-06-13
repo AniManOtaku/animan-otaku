@@ -332,8 +332,8 @@ audio{
     }
     
     .audio-player{
-        width: 40vh;
-        height: 40vh;
+        width: 15vw;
+        height: 15vw;
         border-radius: 2vw;
     }
     
@@ -391,8 +391,8 @@ audio{
     }
     
     .rounded-image{
-        height: 40vh;
-        width: 40vh;
+        height: 15vw;
+        width: 15vw;
         border-radius: 2vw;
     }
     
