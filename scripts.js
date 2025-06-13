@@ -5,7 +5,7 @@
         const aboutRuHorizontal=document.getElementById('about-ru-horizontal');
         
         screens.forEach(screen=>{
-                screen.style.height='100%';
+                screen.style.height='100vh';
         });
         
         aboutRuPortrait.style.height='100%';
