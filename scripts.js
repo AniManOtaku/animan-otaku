@@ -1,18 +1,4 @@
     
-    function adjustHeights(){
-        const screens=document.querySelectorAll('.screen');
-        const aboutRuPortrait=document.getElementById('about-ru-portrait');
-        const aboutRuHorizontal=document.getElementById('about-ru-horizontal');
-        
-        screens.forEach(screen=>{
-                screen.style.height='100vh';
-        });
-        
-        aboutRuPortrait.style.height='100vh';
-        aboutRuPortrait.style.border='5px solid red';
-        aboutRuHorizontal.style.height='100vh';
-        aboutRuHorizontal.style.border='4px solid purple';
-    }
     
     function showScreen(screenId){
         
@@ -32,8 +18,7 @@
         const buttons=document.querySelectorAll('.play-button');
         const audio=document.getElementById('audio');
         
-        function initPlayers(){
-        
+        function updatePlayers(){
             if(audio.paused){
                 audio.currentTime=0;
                 images.forEach(img => {
@@ -53,39 +38,22 @@
             }
         }
         
-        window.addEventListener ('DOMContentLoaded', initPlayers);
-        window.addEventListener ('orientationchange', initPlayers);
-        window.addEventListener ('resize', initPlayers);
+        window.addEventListener('DOMContentLoaded', updatePlayers);
+        window.addEventListener('orientationchange', updatePlayers);
+        window.addEventListener('resize', updatePlayers);
+        
+        audio.addEventListener('play', updatePlayers);
+        audio.addEventListener('pause', updatePlayers);
+        audio.addEventListener('ended' , updatePlayers);
         
         function togglePlay(){
             if(audio.paused){
                 audio.currentTime=0;
                 audio.play();
-                images.forEach(img => {
-                img.classList.remove('paused');
-                });
-                buttons.forEach(but => {
-                but.classList.remove('paused');
-                });
             }
             else {
                 audio.pause();
-                
-                images.forEach(img => {
-                img.classList.add('paused');
-                });
-                buttons.forEach(but => {
-                but.classList.add('paused');
-                });
             }
         }
         
-        audio.addEventListener('ended' , () => {
-            audio.CurrentTime=0;
-            images.forEach(img => {
-                img.classList.add('paused');
-            });
-            buttons.forEach(but => {
-                but.classList.add('paused');
-            });
-        });
+        
