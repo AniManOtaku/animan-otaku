@@ -89,8 +89,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: auto;
     overflow-y: auto;
+    height: 100%;
 }
 
 .bar-horizontal{
@@ -388,8 +388,8 @@ audio{
     #links-ru-horizontal, #links-en-horizontal{
         padding-left: 20vw;
         padding-right: 20vw;
-        padding-top: 20vh;
-        padding-bottom: 20vh;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
         gap: 2vw;
         box-sizing: border-box;
     }
