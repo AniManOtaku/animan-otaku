@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>AniMan Otaku</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="scripts.js">
+    <link rel="icon" type="image/x-icon" href ="/images/icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href ="/images/icon.png">
+    
+</head>
+<body>
+    
+    
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <div id="screen-main" class="screen active">
+        <button class="main-button" onclick="showScreen ('screen-ru')">Русский</button>
+        <button class="main-button" onclick="showScreen ('screen-en')">English</button>
+    </div>
+    
+    
+    <!-- РУСКИЙ ЭКРАН -->
+    <div id="screen-ru" class="screen hidden">
+        <h1>Привет! Я AniMan Otaku.</h1>
+        <p1 class="align-center">Аниматор, программист и немного композитор музыки</p1>
+        <button class="small-button" onclick="showScreen ('screen-about-ru')">Дальше</button>
+    </div>
+    <!-- АНГЛИЙСКИЙ ЭКРАН -->
+    <div id="screen-en" class="screen hidden">
+        <h1>Hello! It's AniMan Otaku.</h1>
+        <p1 class="align-center">Animator, programmer and a bit of music composer.</p1>
+        <button class="small-button" onclick="showScreen ('screen-about-ru')">Next</button>
+    </div>
+    
+    
+    <!-- О СЕБЕ RU -->
+    <audio id="audio" src="audio/staring.wav" loop></audio> <!-- аудио на экране о себе -->
+    <div id="screen-about-ru" class="screen hidden">
+        
+        <!-- ВЕРТИКАЛЬНЫЙ РЕЖИМ -->
+        <div id="about-ru-portrait">
+            <h1>Программирование</h1>
+            <p1 class="align-center">Я с детства хотел создавать игры, поэтому, когда на уроках информатики мы стали изучать программирование, я очень увлёкся этим. Со временем я даже начал делать фанатскую игру «Bocchi The Platformer», но, к сожалению, так и не смог закончить.</p1>
+            <img src="images/bocchi-the-platformer.png" alt="Bocchi The Platformer" class="rounded-image">
+            <h1>Анимация</h1>
+            <p1 class="align-center">Будучи подростком, я начал смотреть аниме и мгновенно влюбился в анимацию и сакугу. С тех пор я пытаюсь подражать японским мастерам и делаю анимации, которыми делюсь в своих социальных сетях.</p1>
+            <img src="images/nijika-ijichi.gif" alt="Bocchi The Platformer" class="rounded-image">
+            <h1>Музыка</h1>
+            <p1 class="align-center">Я просто люблю создавать небольшие мелодии. Я не назову это своим пристрастием, но это определённо что-то чем мне нравится заниматься.</p1>
+            <div class="audio-player" onclick="togglePlay()">
+                <img class="cover-image" src="images/staring-cover-image.png">
+                <img class="play-button" src="images/play-button2.svg">
+            </div>
+            <button class="small-button" onclick="showScreen ('screen-links-ru')">Дальше</button>
+        </div>
+        
+        <!-- ГОРИЗОНТАЛЬНЫЙ РЕЖИМ -->
+        <div id="about-ru-horizontal">
+            <h1>Программирование</h1>
+            <div class="bar-horizontal big">
+                <img src="images/bocchi-the-platformer.png" alt="Bocchi The Platformer" class="rounded-image left">
+                <p1>Я с детства хотел создавать игры, поэтому, когда на уроках информатики мы стали изучать программирование, я очень увлёкся этим. Со временем я даже начал делать фанатскую игру «Bocchi The Platformer», но, к сожалению, так и не смог закончить.</p1>
+            </div>
+            
+            <h1>Анимация</h1>
+            <div class="bar-horizontal big">
+                <p1>Будучи подростком, я начал смотреть аниме и мгновенно влюбился в анимацию и сакугу. С тех пор я пытаюсь подражать японским мастерам и делаю анимации, которыми делюсь в своих социальных сетях.</p1>
+                <img src="images/nijika-ijichi.gif" alt="Bocchi The Platformer" class="rounded-image right">
+            </div>
+            
+            
+            <h1>Музыка</h1>
+            <div class="bar-horizontal big">
+                <div class="audio-player" onclick="togglePlay()">
+                    <img class="cover-image" src="images/staring-cover-image.png">
+                    <img class="play-button" src="images/play-button2.svg">
+                </div>
+                <p1>Я просто люблю создавать небольшие мелодии. Я не назову это своим пристрастием, но это определённо что-то чем мне нравится заниматься.</p1>
+            </div>
+            
+            <button class="small-button" onclick="showScreen ('screen-links-ru')">Дальше</button>
+        </div>
+    </div>
+    
+    
+    <!-- ССЫЛКИ -->
+    <div id="screen-links-ru" class="screen hidden">
+        <!-- ВЕРТИКАЛЬНЫЙ РЕЖИМ -->
+        <div id="links-ru-portrait">
+            <h1>Спасибо что посетили страницу!</h1>
+            <p1 class="align-center">Если вы заинтересовались в моём творчестве, вы можете посетить мои другие страницы в соцсетях.</p1>
+            <img src="images/animan-otaku-pfp.png" class="rounded-image">
+            <div class="bar-horizontal">
+                <p2>Подпишитесь на YouTube и Tiktok где я публикую свои анимации.</p2>
+                <div class="bar-vertical">
+                    <img src="images/youtube.svg" class="icon">
+                    <img src="images/tiktok.svg" class="icon">
+                </div>
+            </div>
+            
+            <div class="bar-horizontal">
+                <p2>Следите за мной в Twitter и Tumblr, я делюсь там своим творчеством.</p2>
+                <div class="bar-vertical">    
+                    <img src="images/twitter.svg" class="icon">
+                    <img src="images/tumblr.svg" class="icon">
+                </div>
+            </div>
+            
+            <div class="bar-horizontal">
+                <p2>Вы можете прослушать мои треки на ютуб.</p2>
+                <div class="bar-vertical">    
+                    <img src="images/youtube.svg" class="icon">
+                </div>
+            </div>
+        
+            <div class="bar-horizontal">
+                <p2>Посетите мою страницу в itch.io, «Bocchi The Platformer» уже там, а также подпишитесь на ютуб о разработке.</p2>
+                <div class="bar-vertical">    
+                    <img src="images/itch-io.svg" class="icon">
+                    <img src="images/youtube.svg" class="icon">
+                </div>
+            </div>
+            
+            <div class="bar-horizontal">
+                <p2>Я очень буду вам благодарен если вы поддержите меня на Buy Me A Coffee или Boosty.</p2>
+                <div class="bar-vertical">    
+                    <img src="images/buy-me-a-coffee.svg" class="icon">
+                    <img src="images/boosty.svg" class="icon">
+                </div>
+            </div>
+            <button class="small-button" onclick="showScreen ('screen-main')">Назад</button>
+        </div>
+        
+        <!-- ГОРИЗОНТАЛЬНЫЙ РЕЖИМ -->
+        <div id="links-ru-horizontal">
+            <h1>Спасибо что посетили страницу!</h1>
+            <p1  class="align-center">Если вы заинтересовались в моём творчестве, вы можете посетить мои другие страницы в соцсетях.</p1>
+            <div class="bar-horizontal slide">
+                <div class="card one">
+                    <div class="text-container">
+                        <p2>Подпишитесь на YouTube и Tiktok где я публикую свои анимации.</p2>
+                    </div>
+                    <div class="bar-horizontal small">
+                        <img src="images/youtube.svg" class="icon">
+                        <img src="images/tiktok.svg" class="icon">
+                    </div>
+                </div>
+                
+                <div class="card two">
+                    <div class="text-container">
+                        <p2>Следите за мной в Twitter и Tumblr, я делюсь там своим творчеством.</p2>
+                    </div>
+                    <div class="bar-horizontal small">
+                        <img src="images/twitter.svg" class="icon">
+                        <img src="images/tumblr.svg" class="icon">
+                    </div>
+                </div>
+                
+                <div class="card three">
+                    <div class="text-container">
+                        <p2>Вы можете прослушать мои треки на ютуб.</p2>
+                    </div>
+                    <div class="bar-horizontal small">
+                        <img src="images/youtube.svg" class="icon">
+                    </div>
+                </div>
+                <div class="card four">
+                    <div class="text-container">
+                        <p2>Посетите мою страницу в itch.io, «Bocchi The Platformer» уже там, а также подпишитесь на ютуб о разработке.</p2>
+                    </div>
+                    <div class="bar-horizontal small">
+                        <img src="images/itch-io.svg" class="icon">
+                        <img src="images/youtube.svg" class="icon">
+                    </div>
+                </div>
+                
+                <div class="card five">
+                    <div class="text-container">
+                        <p2>Я очень буду вам благодарен если вы поддержите меня на Buy Me A Coffee или Boosty.</p2>
+                    </div>
+                    <div class="bar-horizontal small">
+                        <img src="images/buy-me-a-coffee.svg" class="icon">
+                        <img src="images/boosty.svg" class="icon">
+                    </div>
+                </div>
+                
+            </div>
+            <button class="small-button" onclick="showScreen ('screen-main')">Назад</button>
+        </div>
+        
+    </div>
+    
+    <script src="scripts.js"></script>
+    
+</body>
+</html>
