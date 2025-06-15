@@ -90,7 +90,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: auto;
+    height: 100%;
 }
 
 .bar-horizontal{
@@ -451,14 +451,16 @@ audio{
     .card.three{
         transform: translateX(25%) scale(0.8);
         filter: brightness(0.0);
-        opacity: 0.25;
+        opacity: 0;
+        pointer-events: none;
         z-index: 1;
     }
     
     .card.four{
         transform: translateX(-25%) scale(0.8);
         filter: brightness(0.0);
-        opacity: 0.25;
+        opacity: 0;
+        pointer-events: none;
         z-index: 1;
     }
     
@@ -469,19 +471,8 @@ audio{
         z-index: 2;
     }
     
-    .text-container {
-        justify-content: normal;
-        width: 26vw;
-        height: 9vw;
-        margin: 0px;
-        padding: 0px;
-        gap: 0px;
-        overflow: hidden;
-    }
-    
-    .text-container p1, .text-container p2{
-        margin: 0px;
-        padding: 0px;
+    .card.two img, .card.five img{
+        pointer-events: none;
     }
     
     .audio-player{
@@ -532,6 +523,10 @@ audio{
     
     p2{
         font-size: 1.6vw;
+    }
+    
+    .text-overflow-auto{
+        overflow-y: auto;
     }
     
     button{
