@@ -71,25 +71,26 @@ body{
 #screen-links-ru, #screen-links-en{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow-y: auto;
     height: 100%;
 }
 
 #links-ru-portrait, #links-en-portrait{
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-y: auto;
-    height: 100%;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: 100%;
 }
 
 #links-ru-horizontal, #links-en-horizontal{
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-y: auto;
+    overflow: hidden;
     height: 100%;
 }
 
